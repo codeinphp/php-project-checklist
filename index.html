@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <title>A PHP Project Checklist</title>
+	
+	
+	<style>
+		h1.heading { text-align:center; }
+		li { list-style: square; }
+	</style>
+	
+</head>
+<body>
+
+	<h1 class="heading">A PHP Project Checklist</h1>
+	<hr>
+
+	<h3>Open Source Specific</h3>
+	
+	<ul>
+		<li>
+			Readme			
+			<ul>
+				<li>It should contain the "Usage" section</li>
+				<li>It should contain the "Installation" section</li>
+				<li>It should contain the "Requirements" section</li>
+				<li>It should contain the "Contributing" section (via CONTRIBUTING file)</li>
+				<li>It should contain the "Credits" if you prefer</li>
+				<li>It should contain the "License" if you prefer (file "LICENSE" must be present in project root)
+					<ul>
+						<li>GPL: If you want any modified versions of your code to be used only in open-source software</li>
+						<li>LGPL: If your code is designed to be a standalone component that may be included in other applications without modification</li>
+						<li>MIT: Allows for use and redistribution of code so long as the license and copyright are included along with it.</li>
+					</ul>
+				</li>				
+			</ul>						
+		</li>
+		
+		<li>Semantic Versioning (<a target="_blank" href="http://semver.org/">more</a>)</li>
+		<li>Github page (<a target="_blank" href="https://pages.github.com/">more</a>)</li>
+		<li>A Getting Started Document</li>
+		<li>Continuous Integration (<a target="_blank" href="http://en.wikipedia.org/wiki/Continuous_integration">more</a>)</li>
+		<li>Bug Tracking integrated with the source control</li>
+		<li>A style guide to keep the code consistent</li>
+		<li>A forum for the community to get support, share ideas, etc.</li>
+		<li>Should allow installation via composer (<a target="_blank" href="https://getcomposer.org/">more</a>)</li>
+		<li>Auto-Generated Documentation</li>
+		<li>Manual</li>
+	</ul>
+	
+	<h3>PHP Project Specific</h3>
+	
+	<ul>
+		<li>Project Architecture Planning (decide which framework to use, which design patterns to follow: MVC, HMVC, DDD, etc)</li>
+		<li>Automated unit tests and builds to push update to the website</li>
+		<li>Proper folder structure such as src for source, vendor for dependencies, tests for tests, config, etc</li>
+		<li>
+			Coding Specific (PHP, CSS, Javascript)
+			<ul>
+				<li>PSR standards (<a target="_blank" href="http://www.php-fig.org/">more</a>)</li>
+				<li>
+					Write SOLID code (<a target="_blank" href="http://en.wikipedia.org/wiki/SOLID%28object-orienteddesign%29">more</a>)
+					<ul>
+						<li>Single Responsibility Principle</li>
+						<li>Open/Closed Principle</li>
+						<li>Liskov Substitution Principle</li>
+						<li>Interface Segregation Principle</li>
+						<li>Dependency Inversion Principle</li>
+					</ul>
+				</li>
+				<li>
+					Avoid STUPID code (<a target="_blank" href="http://nikic.github.io/2011/12/27/Dont-be-STUPID-GRASP-SOLID.html">more</a>)
+					<ul>
+						<li>Singleton</li>
+						<li>Tight coupling</li>
+						<li>Untestability</li>
+						<li>Premature Optimization</li>
+						<li>Indescriptive Naming</li>
+						<li>Duplication</li>
+					</ul>					
+				</li>
+				<li>Monolog (psr-compliant logger)</li>
+				<li>Validators: CSSLint, JSHint, PHPCI, etc</li>
+				<li>Use SPL Exceptions (<a target="_blank" href="http://php.net/manual/en/spl.exceptions.php">more</a>)</li>
+				<li>For CSS, use preprocessor like SASS or LESS</li>
+				<li>Tools: Choose from Awesome PHP (<a target="_blank" href="https://github.com/ziadoz/awesome-php">more</a>)</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>
