@@ -5,21 +5,56 @@
 	
 	
 	<style>
+		body { 
+			font-size: 18px; 
+			margin-bottom: 50px;
+			font-family: 'Segoe UI','Open Sans',sans-serif;
+		}
+
 		h1.heading { text-align:center; }
 		li { list-style: square; }
+		
+		.left { float:left; }
+		.right { float:right; }
+		.clear { clear:both; }
+		
+		.btn {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			padding: 15px 45px;
+			font-size: 24px;
+			font-family: "Bitter",serif;
+			line-height: 1.8;
+			appearance: none;
+			box-shadow: none;
+			border-radius: 0;
+			color: #fff;
+			background-color: #6496c8;
+			text-shadow: -1px 1px #417cb8;
+			border: none;		  
+		}
+		.btn:focus {
+		  outline: none
+		}		
 	</style>
 	
 </head>
 <body>
-
-	<!-- twitter share button start -->
-	<a href="https://twitter.com/share" class="twitter-share-button" data-text="A #PHP Project #Checklist" data-via="sarfraznawaz" data-size="large" data-count="none">Tweet</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	<!-- twitter share button end -->
 	
+	<div class="left">
+		<!-- twitter share button start -->
+		<a target="_blank" href="https://twitter.com/share" class="twitter-share-button" data-text="A #PHP Project #Checklist" data-via="sarfraznawaz" data-size="large" data-count="none">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<!-- twitter share button end -->		
+	</div>
+	<div class="right">
+		<a target="_blank" class="btn" href="http://codeinphp.github.io/php-project-checklist/">Fork Me</a>
+	</div>	
+	<div class="clear"></div>
+
 	<h1 class="heading">A PHP Project Checklist</h1>
 	<hr>
-
+	
 	<h3>Open Source Specific</h3>
 	
 	<ul>
